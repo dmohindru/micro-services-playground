@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: servicea
+  cloud:
+    config:
+      uri: http://localhost:8080

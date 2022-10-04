@@ -10,7 +10,7 @@ Content-Type: text/plain
 POST http://localhost:8080/encrypt
 Content-Type: text/plain
 
-This is an encrypted text
+This is an encrypted text for Service B
 
 ###
 # get default properties for servicea application
