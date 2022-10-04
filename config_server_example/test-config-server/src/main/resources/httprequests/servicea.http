@@ -10,13 +10,11 @@ Content-Type: text/plain
 POST http://localhost:8080/encrypt
 Content-Type: text/plain
 
-my name is dhruv
+This is an encrypted text
 
 ###
 # get default properties for servicea application
 GET http://localhost:8080/servicea/default
-
-
 Accept: application/json
 
 ###
