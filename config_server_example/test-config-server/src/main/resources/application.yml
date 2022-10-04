@@ -10,7 +10,9 @@ spring:
       server:
         git:
           uri: https://github.com/dmohindru/micro-service-config-repo.git
-          searchPaths: serviceA # This parameter should specify parent folder to check for properties file
+          searchPaths: # This parameter should specify parent folder to check for properties file
+            - serviceA
+            - serviceB
           default-label: master # specify default branch too checkout
 
 #          username: dmohindru
