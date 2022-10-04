@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: test-config-server
+  profiles:
+    active:
+      - git
+
+  cloud:
+    config:
+      server:
+        git:
+#          uri: https://github.com/dmohindru/micro-service-config-repo.git
+#          searchPaths: serviceA/servicea
+          uri: https://github.com/ihuaylupo/config.git
+          searchPaths: licensingservice
+
+server:
+  port: 8080
+
+encrypt:
+  key: my_standard_key
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
