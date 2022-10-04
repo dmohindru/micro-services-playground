@@ -1,0 +1,20 @@
+###
+# Post call to decrypt an encrypted text
+POST http://localhost:8080/decrypt
+Content-Type: text/plain
+
+5a3691789a9902ce6d9f074dc873140db411ef7d4d53cfd0232d48ced2c54e0d7ea63331e3fdcc14d8df87490b80e99f
+
+###
+# Post call to encrypt a text
+POST http://localhost:8080/encrypt
+Content-Type: text/plain
+
+This is an encrypted text for Service B
+
+###
+# get default properties for servicea application
+GET http://localhost:8080/servicea/default
+Accept: application/json
+
+###

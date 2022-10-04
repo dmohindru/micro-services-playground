@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: test-config-server
+  profiles:
+    active:
+      - git
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dmohindru/micro-service-config-repo.git
+          searchPaths: # This parameter should specify parent folder to check for properties file
+            - serviceA
+            - serviceB
+          default-label: master # specify default branch too checkout
+
+#          username: dmohindru
+#          password: Dhruv@2707
+#          uri: https://github.com/ihuaylupo/config.git
+#          searchPaths: licensingservice
+
+server:
+  port: 8080
+
+encrypt:
+  key: my_standard_key
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
